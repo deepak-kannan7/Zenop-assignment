@@ -1,21 +1,21 @@
-Congrats! 🎉
+# Token-Healing-in-Python
 
-If you made it here then you have passed our initial screening. Welcome to second round of your interview.
+My Work Flow in the 12 hours given: 
 
-During this round, we will evaluate your ability to handle new and intricate learning challenges. Choose one of the following assignments. But don't spend no more than 12 hours working on it. After 12 hours, please submit your progress, regardless of the extent of completion. Feel free to generate code using AI tools and chat apps like chatgpt, bing chat, code copilots, codium etc.
+Hour 0-1: Deciding on which question to attempt, read through the problem statements and decided to take up token healing because it is an NLP project which is my field of interest. 
 
-To access the assignment details, kindly visit the ***#second-round*** channel . If you have any questions ask in the ***#interview-doubts*** channel.
+Hour 1-2: After getting a basic idea of the concept of token healing, I tried to implement a very simple version of token healing which is TokenHealingTry.ipynb. A brute force version where just the wrong words are replaced by the correct ones directly because the input is known.
 
-Discord link -<https://discord.gg/uTYkFDS8>
+Hours 2-4: Opened Microsoft Guidance documentation and read through it. I read through how neural networks like BERT were used in embedding to capture syntactic and semantic properties of token. 
 
-To create a pull request for a public git repo, you need to follow these steps:
+Hours 4-6: Tried to code using NLTK with corpus and tokenize. Got a pretty decent level of accuracy with different type of texts. Solved most of the spell errors in tokens. Put my code on chatgpt and told it to try optimizing it. This code is in TokenHealingNLTK.ipynb. 
 
--   Fork the repo that you want to contribute to. This will create a copy of the repo under your own GitHub account. You can fork a repo by clicking the **Fork** button on the top right corner of the repo page.
--   Clone your forked repo to your local machine. You can do this by running **`git clone <https://github.com/your-username/repo-name.git`**> in your terminal, where **`your-username`** is your GitHub username and **`repo-name`** is the name of the repo you forked.
--   Create a new branch for your changes. You can do this by running **`git checkout -b branch-name`**, where **`branch-name`** is a descriptive name for your branch.
--   Make your changes in the new branch. You can use any code editor or IDE that you prefer. You can also use GitHub Desktop to manage your changes.
--   Add and commit your changes to the new branch. You can do this by running **`git add .`** to stage all your changes and **`git commit -m "message"`** to commit them with a message, where **`message`** is a brief summary of what you did.
--   Push your changes to your forked repo on GitHub. You can do this by running **`git push origin branch-name`**, where **`branch-name`** is the name of your branch.
--   Create a pull request from your forked repo to the original repo. You can do this by going to your forked repo on GitHub and clicking the **Compare & pull request** button. This will open a page where you can review your changes and add a title and a description for your pull request. You can also link your pull request to an issue if there is one related to your changes. Then click **Create pull request** to submit it.
+Hour 6-7: Tried running the optimized chatgpt code using fuzzywuzzy, accuracy was pretty decent and was similar to my original code. When prompted again to use a different library, it used language-tool-python and gave a code which gave very erratic outputs. Decided to go ahead with my original NLTK code, after all humans also have a good brain.
 
-That's it! You have created a pull request for a public git repo. Now you need to wait for the maintainers of the original repo to review and merge your pull request. They might also ask you for some feedback or changes before merging it. You can communicate with them through the comments section of your pull request.
+Hours 7-9: Queried chatgpt about what Hugging Face and transformers were because I had no idea, got it to write token healing codes using transformers, it gave very erroneous codes so I had to keep asking it to rectify the errors I was getting, one of the code took 30 minutes to run so I asked it to give optimized solutions. These codes are in TokenHealingTransformers.ipynb but most of the codes did not give the desired outputs. Overall, the attempt using transformers was not going well because I did not get correct outputs even for simple spell errors unlike the NLTK method. 
+
+Hour 9-11: Searched on how to handle grammatical errors and how it was done in GUIDANCE. Read about the GECToR model used by Grammarly and saw their GitHub repo. I queried chatgpt to write a code using GECToR after cloning the Grammarly repo but still it didnt work because of some error. I learnt about some other methods to handle grammatical errors like Statistical Machine Translation, Neural Machine Translation and Sequence Labeling. I tried implementing these but my efforts were only in vain. The codes are available in GrammaticalErrorHandling.ipynb. 
+
+Hour 11-12: Uploaded code on my GitHub repo, wrote this report, setting up the PR and submission. 
+
+I would like to thank Mr.Anurag Bisoyi and openAgent(Zenop) for selecting me in the first round and giving me the opportunity to do this project. NLP was a domain I really wanted to explore and I have learnt so much about this domain in only 12 hours, thanks to this project. Now that the 12 hours are over, I am motivated to improve upon this project, rectify all the errors and create a good model for token healing to solve all types of errors.
