@@ -16,6 +16,6 @@ Hours 7-9: Queried chatgpt about what Hugging Face and transformers were because
 
 Hour 9-11: Searched on how to handle grammatical errors and how it was done in GUIDANCE. Read about the GECToR model used by Grammarly and saw their GitHub repo. I queried chatgpt to write a code using GECToR after cloning the Grammarly repo but still it didnt work because of some error. I learnt about some other methods to handle grammatical errors like Statistical Machine Translation, Neural Machine Translation and Sequence Labeling. I tried implementing these but my efforts were only in vain. The codes are available in GrammaticalErrorHandling.ipynb. 
 
-Hour 11-12: Uploaded code on my GitHub repo, wrote this report, setting up the PR and submission. 
+Hour 11-12: Implemented spell error correction using spaCy, Uploaded code on my GitHub repo, wrote this report, setting up the PR and submission. 
 
 I would like to thank Mr.Anurag Bisoyi and openAgent(Zenop) for selecting me in the first round and giving me the opportunity to do this project. NLP was a domain I really wanted to explore and I have learnt so much about this domain in only 12 hours, thanks to this project. Now that the 12 hours are over, I am motivated to improve upon this project, rectify all the errors and create a good model for token healing to solve all types of errors.
